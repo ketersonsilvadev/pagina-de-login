@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background: linear-gradient(45deg,
+            #FEDA75 0%,
+            #FA7E1E 25%,
+            #D62976 50%,
+            #962FBF 75%,
+            #4F5BD5 100%);
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.788);
+    padding:60px 40px;
+    border: 1px solid rgba(7, 7, 7, 0.5);
+    border-radius: 40px;
+    max-width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form h1 {
+    text-align: center;
+    color: rgba(5, 5, 5, 0.651);
+    font-size: 3.2em;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+    text-shadow: 1px 1px 0px rgba(255, 253, 253, 0.137);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login input {
+    padding: 20px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+    outline: none;
+}
+
+label{
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+::placeholder{
+    font-variant: small-caps;
+}
+
+.esqueceu-a-senha{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.esqueceu-a-senha a{
+    text-decoration: none;
+    color: #D62976;
+    transition: 0.3s;
+}
+
+.esqueceu-a-senha a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;;
+}
+
+button:hover{
+    background-color: #4f5ad55e;
+    color: #fefeff;
+}
+
+button:focus-visible {
+    outline: 2px solid #2563EB;
+    outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 40px 25px;
+    }
+
+    form h1 {
+        font-size: 2.2em;
+    }
+}
